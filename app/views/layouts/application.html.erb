@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BlogTarea</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag :all %>
+  <%= javascript_include_tag 'jquery_ujs' %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "jquery.rails.js" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <nav class="be-red white large-padding">
+    <ul class="no-list row center-xs">
+      <li class="col-md">
+        <%= link_to "Inicio", root_path %>
+      </li>
+      <li class="col-md">
+        Diseno
+      </li>
+      <li class="col-md">
+        Programacion
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<%= yield %>
+
+</body>
+</html>
